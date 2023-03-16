@@ -10,4 +10,8 @@ const generateUl = () => {
     `;
 };
 
-console.log(generateUl);
+const div = document.createElement("div");
+div.classList.add("ulDiv");
+div.innerHTML = generateUl;
+
+div.append(generateUl);
